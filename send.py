@@ -15,4 +15,4 @@ def send_action(cred , action) :
     #     auth=(cred['username'], cred['password']),
     #     headers={"Content-Type": "application/json" })
     resdata = resp.json()
-    print(resdata["actions"])
+    print(resdata)

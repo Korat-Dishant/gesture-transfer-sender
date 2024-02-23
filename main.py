@@ -11,8 +11,8 @@ import pyautogui
 
 def main():    
     tunnelUrl = input("Device URL : ")
-    username = input("username")
-    password = input("password")
+    # username = input("username")
+    # password = input("password")
     username = "master"
     password = "master123"
     cred = {"tunnelUrl" : tunnelUrl , "username" : username , "password":password}
@@ -58,12 +58,14 @@ def main():
                         cv2.putText(image, "Gas", (500,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
                         # pyautogui.keyDown('right')
                         # pyautogui.keyUp('left')
-                        send_action("right")
+                        # send_action(cred,"right")
+                        print("right")
                     elif index_finger_up > index_finger_down:
                         cv2.putText(image, "Brake", (500,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (255,0,0), 2)
                         # pyautogui.keyDown('left')
                         # pyautogui.keyUp('right')
-                        send_action("left")
+                        # send_action(cred,"left")
+                        print("left")
             else :
                 cv2.putText(image, "null", (500,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (255,0,0), 2)
                 # pyautogui.keyUp('left')
