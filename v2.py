@@ -12,10 +12,10 @@ from send import send_action
 
 def main():    
     tunnelUrl = input("Device URL : ")
-    # username = input("username")
-    # password = input("password")
-    username = "master"
-    password = "master123"
+    username = input("username : ")
+    password = input("password : ")
+    # username = "master"
+    # password = "master123"
     global cred
     cred = {"tunnelUrl" : tunnelUrl , "username" : username , "password":password}
 
